@@ -18,9 +18,9 @@ router.post('/create', function(req, res, next) {
 	//Creating an event object and saving it
 	new Event({
 		activity: req.body.activity,
-		location = req.body.location,
-		eventTime = req.body.eventTime
-		creator = req.body.creator
+		location: req.body.location,
+		eventTime: req.body.eventTime
+		creator: req.body.creator
 	}).save(function(err, prd){
 		if(err)
 			res.json(err);
