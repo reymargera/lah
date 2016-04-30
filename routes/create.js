@@ -19,7 +19,7 @@ router.post('/create', function(req, res, next) {
 	new Event({
 		activity: req.body.activity,
 		location: req.body.location,
-		eventTime: req.body.eventTime
+		eventTime: req.body.eventTime,
 		creator: req.body.creator
 	}).save(function(err, prd){
 		if(err)
